@@ -1,6 +1,6 @@
 # MY CONFIG FILE WITH MY TOKEN
 tns_config_MINE.yaml
-
+CLAUDE.md
 # TNS's own example scripts/data (reference only, not our code)
 tns_examples/
 
@@ -10,3 +10,4 @@ reports/
 __pycache__/
 *.py[cod]
 .venv
+.pytest_cache/

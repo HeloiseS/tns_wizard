@@ -1,0 +1,5 @@
+tns_bot_id: "12345"
+tns_bot_name: "test_bot"
+tns_api_key: "abcdef"
+tns_host: "sandbox.wis-tns.org"
+tns_group_id: "111"

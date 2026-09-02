@@ -64,11 +64,12 @@ def _log_status(response):
         if status == 200:
             msg = "OK"
             logging.info(f"Status code: [ {status} - '{msg}' ]")
-        elif status in EXT_HTTP_ERRORS:
-            msg = ERR_MSG[EXT_HTTP_ERRORS.index(status)]
         else:
-            msg = "Undocumented error"
-        logging.error(f"Status code: [ {status} - '{msg}' ]")
+            if status in EXT_HTTP_ERRORS:
+                msg = ERR_MSG[EXT_HTTP_ERRORS.index(status)]
+            else:
+                msg = "Undocumented error"
+            logging.error(f"Status code: [ {status} - '{msg}' ]")
 
 
 def upload_files(api_url, headers, api_key, file_paths):
